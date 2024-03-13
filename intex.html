@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microsoft Azure Login</title>
+    <!-- Agregar enlace al archivo CSS de Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <span class="navbar-brand mb-0 h1">Microsoft Azure Login</span>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <button id="connectButton" class="btn btn-primary btn-block">Conectar</button>
+                <button id="disconnectButton" class="btn btn-danger btn-block">Desconectar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Agregar el script de Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        // Función para conectarse
+        function connect() {
+            // Aquí puedes agregar el código para conectarte a Microsoft Azure
+            console.log("Conectado a Microsoft Azure");
+        }
+
+        // Función para desconectarse
+        function disconnect() {
+            // Aquí puedes agregar el código para desconectarte de Microsoft Azure
+            console.log("Desconectado de Microsoft Azure");
+        }
+
+        // Asignar eventos a los botones
+        document.getElementById('connectButton').addEventListener('click', connect);
+        document.getElementById('disconnectButton').addEventListener('click', disconnect);
+    </script>
+</body>
+</html>
